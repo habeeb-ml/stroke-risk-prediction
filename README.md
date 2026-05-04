@@ -48,55 +48,7 @@ The dataset contains **5,110 patient records** with the following features:
 * Further addressed class imbalance using `class\\\\\\\_weight='balanced'`
 * Train-test split: 80% training, 20% testing
 
-### 4\. Model Evaluation
 
-Evaluation metrics included:
-
-* Accuracy
-* Precision
-* Recall
-* F1-score
-* Confusion matrix and CM Display
-
-These metrics were chosen to provide a balanced assessment, particularly in the context of imbalanced medical data where accuracy alone may be misleading.
-
----
-
-## 📈 Results Summary
-
-The final model achieved an overall accuracy of approximately **79%**, with balanced precision and recall across classes. The confusion matrix demonstrated that the model successfully predicts both stroke and non-stroke cases, though some false negatives remain.
-
-> From a clinical perspective, false negatives are particularly important, as missed high-risk patients may delay preventive care. This highlights the trade-off between sensitivity and specificity inherent in many medical ML applications.
-
----
-
-## ⚠️ Limitations
-
-* No imaging, laboratory biomarkers, or longitudinal follow-up data were included
-* The model has not been externally validated on independent datasets
-* Logistic regression was used as a baseline model; more complex models may yield improved performance
-
----
-
-## 🔮 Future Improvements
-
-Potential extensions of this project include:
-
-* Comparison with tree-based and ensemble models (Random Forest, XGBoost)
-* Application of SMOTE and other resampling techniques
-* Optimization for recall to reduce false negatives
-* ROC-AUC and threshold tuning
-* Validation using real-world clinical datasets
-
----
-
-## 🛠️ Technologies Used
-
-* Python
-* Pandas, NumPy
-* Matplotlib, Seaborn
-* Scikit-learn
-* Jupyter Notebook
 
 ---
 
